@@ -15,6 +15,28 @@ Ajouter les dépendances nécessaires pour faire les tests
 		</dependency>
 ```
 
+Ajouter un fichier ```HelloController.java```
+```java
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+	private final GreetingService greetingService;
+
+	public HelloController(GreetingService greetingService) {
+		this.greetingService = greetingService;
+	}
+
+	@GetMapping("/")
+	public String index() {
+		return this.greetingService.greet();
+	}
+
+}
+```
+
 Ajouter un fichier qui contiendra service ```GreetingService```.
 ```java
 import org.springframework.stereotype.Service;
