@@ -49,7 +49,7 @@ Utilisation du plugin configFileProvider et un profile:
 ```
 configFileProvider([configFile(fileId: id_config, variable: 'MAVEN_SETTINGS')]) {
     // Exécuter la commande mvn avec le settings
-    mvn -s $MAVEN_SETTINGS -Preposilite
+    sh "mvn deploy -s $MAVEN_SETTINGS -Preposilite"
 }
 ```
 
