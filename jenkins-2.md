@@ -1,5 +1,13 @@
 # Exercice jenkins (Partie 2)
 ## Ajout de tests unitaires
+Ajouter la dépendance ```spring-boot-starter-web```
+```xml
+    <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+```
+
 Ajouter les dépendances nécessaires pour faire les tests
 ```xml
 		<dependency>
