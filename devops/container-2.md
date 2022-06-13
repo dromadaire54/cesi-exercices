@@ -6,5 +6,6 @@
      * le conteneur sera accesible depuis l'extérieur depuis le port ```8180```
      * Un volume sera disponible entre le répertoire ```/tmp/data``` du host vers le répertoire ```/usr/share/nginx/html```
 4. Ajouter un fichier ```index.html``` avec comme contenu ```Je suis dedans``` dans le répertoire ```/tmp/data```.
-5. Depuis votre host essayer d'accès au conteneur.
-6. Arrêter et supprimer le conteneur ```test-1```
+5. Depuis votre host essayer d'accèder au conteneur et afficher le contenu du répertoire ```/usr/share/nginx/html```.
+6. Depuis le host faite ```curl http://localhost:8180```
+7. Arrêter et supprimer le conteneur ```test-1```
