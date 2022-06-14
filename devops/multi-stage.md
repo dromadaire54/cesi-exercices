@@ -3,6 +3,7 @@
  Deux web services sont disponibles:
    * ```/add?usualLastName=<last_name>&birthLastName=<birth>&firstName=<first>```
    * ```/all``` 
+   * Les artifacts sont dans le dossier ```target```
 ## Création de l'image de l'application
   
   1. La création d'un image de l'application à partir d'un argument ```VERSION``` qui sera ```1.0.0-SNAPSHOT``` par défaut ***dans les deux stages***.
