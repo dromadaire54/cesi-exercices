@@ -1,4 +1,8 @@
 # Utilisation du multistage
+## Introduction
+ Deux web services sont disponibles:
+   * ```/add?usualLastName=<last_name>&birthLastName=<birth>&firstName=<first>```
+   * ```/all``` 
 ## Création de l'image de l'application
   
   1. La création d'un image de l'application à partir d'un argument ```VERSION``` qui sera ```1.0.0-SNAPSHOT``` par défaut ***dans les deux stages***.
