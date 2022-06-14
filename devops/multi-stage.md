@@ -7,8 +7,13 @@
   4. Builder l'image avec le nom ```sample```
   5. Vérifier qui l'image est construit correctement
   6. Essayer de lancer un conteneur à partir de l'image ```sample``` avec les variables suivantes:
-    * MYSQL_HOST:
-    * USER:
-    * PASSWORD:
+       * MYSQL_HOST=
+       * USER=
+       * PASSWORD=
+
+Pour la partie base de données:
+ * lancer la commande suivante ```docker run --name db -e MARIADB_ROOT_PASSWORD=test -v votre-path-à-vous/sample-springboot/fixtures/:/docker-entrypoint-initdb.d -v /tmp/data:/var/lib/mysql mariadb:10.8.2```
+ * Récupérer l'ip du conteneur à l'aide de ```docker inspect```
+ * Renseigner les variables d'environnement
 
 L'ip du ```MYSQL_HOST``` est celui de votre host il contenu dans l'interface ```docker0```
